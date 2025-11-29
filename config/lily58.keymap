@@ -67,7 +67,7 @@
             >;
         };
 
-        layer_3 {
+        game_num_layer {
             bindings = <
 &none  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                   &none      &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &none
 &none  &none   &sk W   &none   &none   &none                    &none      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
@@ -75,9 +75,11 @@
 &none  &none   &none   &none   &none   &none   &none     &none  &none      &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &none
                        &none   &none   &none   &tog 3    &none  &kp KP_N0  &kp KP_N0        &kp KP_DOT
             >;
+
+            label = "Game/Num";
         };
 
-        layer_4 {
+        game_layer {
             bindings = <
 &trans     &trans  &trans  &trans     &trans  &trans                            &trans         &trans   &trans   &trans  &trans  &trans
 &trans     &trans  &trans  &trans     &trans  &trans                            &trans         &trans   &trans   &trans  &trans  &trans
@@ -85,9 +87,11 @@
 &kp LSHFT  &trans  &trans  &trans     &trans  &trans    &kp N        &tog 4     &trans         &trans   &trans   &trans  &trans  &trans
                            &kp LCTRL  &mo 3   &kp LALT  &kp SPACE    &kp SPACE  &kp BACKSPACE  &kp DEL  &kp INS
             >;
+
+            label = "Game";
         };
 
-        layer_5 {
+        macro_layer {
             bindings = <
 &none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                   &none  &none  &none  &none  &none  &none
@@ -95,6 +99,8 @@
 &none  &none  &none  &none  &none  &none  &none    &none   &none  &none  &none  &none  &none  &none
                      &none  &none  &none  &none    &tog 4  &none  &none  &none
             >;
+
+            label = "Macro";
         };
     };
 };
