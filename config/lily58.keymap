@@ -14,14 +14,14 @@
         macro_linux: macro_linux {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to 6>;
+            bindings = <&bt BT_SEL 0 &to 0>;
             label = "MACRO_LINUX";
         };
 
         macro_macos: macro_macos {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 0>;
+            bindings = <&bt BT_SEL 1 &to 6>;
             label = "MACRO_MACOS";
         };
     };
@@ -43,7 +43,7 @@
 &lt 2 TAB        &kp Q   &kp W   &kp E            &kp R           &kp T                                                                 &kp Y          &kp U    &kp I      &kp O    &kp P     &kp MINUS
 &lt 1 ESC        &kp A   &kp S   &kp D            &kp F           &kp G                                                                 &kp H          &kp J    &kp K      &kp L    &kp SEMI  &kp SQT
 &mt LSHFT ENTER  &kp Z   &kp X   &kp C            &kp V           &kp B           &lt 3 RBKT                &lt 5 RBKT                  &kp N          &kp M    &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT ENTER
-                                 &mt LCTRL LG(C)  &mt LGUI LG(V)  &mt LALT ENTER  &mt LC(LG(LALT)) SPACE    &mt LS(LC(LG(LALT))) SPACE  &kp BACKSPACE  &kp DEL  &lt 1 INS
+                                 &mt LCTRL LC(C)  &mt LGUI LC(V)  &mt LALT ENTER  &mt LC(LG(LALT)) SPACE    &mt LS(LC(LG(LALT))) SPACE  &kp BACKSPACE  &kp DEL  &lt 1 INS
             >;
         };
 
@@ -119,13 +119,13 @@
             label = "Macro";
         };
 
-        linux_layer {
+        macos_layer {
             bindings = <
 &trans  &trans  &trans  &trans           &trans          &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans           &trans          &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans           &trans          &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans           &trans          &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &mt LCTRL LC(C)  &mt LGUI LC(V)  &trans  &trans    &trans  &trans  &trans  &trans
+                        &mt LCTRL LG(C)  &mt LGUI LG(V)  &trans  &trans    &trans  &trans  &trans  &trans
             >;
         };
     };
