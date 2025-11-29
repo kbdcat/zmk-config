@@ -23,11 +23,11 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE        &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                                          &kp N6           &kp N7     &kp N8         &kp N9   &kp N0    &kp MINUS
-&kp TAB          &kp Q   &kp W   &kp E      &kp R     &kp T                                                           &kp Y            &kp U      &kp I          &kp O    &kp P     &kp EQUAL
-&kp ESCAPE       &kp A   &kp S   &kp D      &kp F     &kp G                                                           &kp H            &kp J      &kp K          &kp L    &kp SEMI  &kp SQT
-&mt LSHFT ENTER  &kp Z   &kp X   &kp C      &kp V     &kp B     &lt 3 RBKT                &lt 5 RBKT                  &kp N            &kp M      &kp COMMA      &kp DOT  &kp FSLH  &mt RSHIFT ENTER
-                                 &kp LCTRL  &kp LGUI  &kp LALT  &mt LC(LG(LALT)) SPACE    &mt LS(LC(LG(LALT))) SPACE  &lt 2 BACKSPACE  &lt 1 DEL  &mt RCTRL INS
+&kp GRAVE        &kp N1  &kp N2  &kp N3     &kp N4    &kp N5                                                          &kp N6         &kp N7   &kp N8         &kp N9   &kp N0    &kp MINUS
+&lt 2 TAB        &kp Q   &kp W   &kp E      &kp R     &kp T                                                           &kp Y          &kp U    &kp I          &kp O    &kp P     &kp EQUAL
+&lt 1 ESC        &kp A   &kp S   &kp D      &kp F     &kp G                                                           &kp H          &kp J    &kp K          &kp L    &kp SEMI  &kp SQT
+&mt LSHFT ENTER  &kp Z   &kp X   &kp C      &kp V     &kp B     &lt 3 RBKT                &lt 5 RBKT                  &kp N          &kp M    &kp COMMA      &kp DOT  &kp FSLH  &mt RSHIFT ENTER
+                                 &kp LCTRL  &kp LGUI  &kp LALT  &mt LC(LG(LALT)) SPACE    &mt LS(LC(LG(LALT))) SPACE  &kp BACKSPACE  &kp DEL  &mt RCTRL INS
             >;
         };
 
@@ -41,11 +41,11 @@
 
             display-name = "Lower";
             bindings = <
-&none       &kp F1                  &kp F2        &kp F3        &kp F4        &kp F5                             &kp F6    &kp F7     &kp F8     &kp F9     &kp F10  &kp F11
-&none       &bt BT_SEL 0            &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none    &kp F12
-&none       &kp LG(F1)              &kp LG(F2)    &kp LG(F3)    &kp LG(F4)    &kp LG(F5)                         &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none    &none
-&trans      &kp LA(LC(LG(LS(F1)))) &kp LA(LC(LG(LS(F2)))) &kp LA(LC(LG(LS(F3)))) &kp LA(LC(LG(LS(F4)))) &kp LA(LC(LG(LS(F5))))  &bt BT_CLR    &none  &none     &none      &none      &none      &none    &none
-                                                  &trans        &trans        &trans        &none         &none  &none     &none      &none
+&none   &kp F1                  &kp F2                  &kp F3                  &kp F4                  &kp F5                                       &kp F6    &kp F7     &kp F8     &kp F9     &kp F10  &kp F11
+&none   &bt BT_SEL 0            &bt BT_SEL 1            &bt BT_SEL 2            &bt BT_SEL 3            &bt BT_SEL 4                                 &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &none    &kp F12
+&none   &kp LG(F1)              &kp LG(F2)              &kp LG(F3)              &kp LG(F4)              &kp LG(F5)                                   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &none    &none
+&trans  &kp LA(LC(LG(LS(F1))))  &kp LA(LC(LG(LS(F2))))  &kp LA(LC(LG(LS(F3))))  &kp LA(LC(LG(LS(F4))))  &kp LA(LC(LG(LS(F5))))  &bt BT_CLR    &none  &none     &none      &none      &none      &none    &none
+                                                        &trans                  &trans                  &trans                  &none         &none  &none     &none      &none
             >;
         };
 
