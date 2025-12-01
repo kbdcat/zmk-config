@@ -85,11 +85,11 @@
 
         game_num_layer {
             bindings = <
-&none    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                            &kp NUMBER_6  &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &none
-&none    &none   &kt W   &none   &none   &none                             &none         &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
-&kp ESC  &none   &kp C   &kp I   &kp M   &kp J                             &none         &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_ENTER  &none
-&none    &none   &none   &none   &none   &none   &none    &kp LOCKING_NUM  &none         &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &none
-                         &none   &none   &none   &to 3    &none            &kp KP_N0     &kp KP_N0        &kp KP_DOT
+&to 3   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                             &none      &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &none
+&trans  &none   &kt W   &none   &none   &none                              &none      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
+&trans  &none   &kp C   &kp I   &kp M   &kp J                              &none      &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_ENTER  &none
+&trans  &none   &none   &none   &none   &none   &to 0     &kp LOCKING_NUM  &none      &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &none
+                        &trans  &trans  &trans  &trans    &none            &kp KP_N0  &kp KP_N0        &kp KP_DOT
             >;
 
             label = "Game/Num";
