@@ -75,20 +75,20 @@
 
             display-name = "Mouse";
             bindings = <
-&none  &none         &none         &none           &none         &none                              &none           &none           &none         &none            &none  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                       &none           &mkp LCLK       &mkp MCLK     &mkp RCLK        &none  &none
-&none  &none         &none         &none           &none         &none                              &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
-&none  &none         &none         &none           &none         &none         &none         &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
+&none  &none         &none         &none           &none         &none                              &none           &none           &none         &none            &none  &tog 3
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4                       &none           &mkp LCLK       &mkp MCLK     &mkp RCLK        &none  &tog 4
+&none  &none         &none         &none           &none         &none                              &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &tog 5
+&none  &none         &none         &none           &none         &none         &none         &none  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &tog 6
                                    &studio_unlock  &none         &none         &bt BT_CLR    &none  &mkp MB4        &mkp MB5        &none
             >;
         };
 
         game_num_layer {
             bindings = <
-&none   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                        &tog 3   &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &none
+&none   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                        &none    &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &none
 &trans  &none   &kt W   &none   &none   &none                         &none    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
 &trans  &none   &kp C   &kp I   &kp M   &kp J                         &none    &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_ENTER  &none
-&trans  &none   &none   &none   &none   &none   &to 0     &kp KP_NUM  &kp DOT  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &kp A
+&trans  &none   &none   &none   &none   &none   &none     &kp KP_NUM  &kp DOT  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &kp A
                         &trans  &trans  &trans  &trans    &kp KP_N0   &trans   &trans           &trans
             >;
 
@@ -109,11 +109,11 @@
 
         macro_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &tog 6
-&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none     &none   &none  &none  &none  &none  &none  &none
-                     &none  &none  &none  &tog 3    &tog 4  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+                     &none  &none  &none  &none    &none  &none  &none  &none
             >;
 
             label = "Macro";
