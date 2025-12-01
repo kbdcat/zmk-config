@@ -57,11 +57,11 @@
 
             display-name = "Lower";
             bindings = <
-&none   &kp F1                  &kp F2                  &kp F3                  &kp F4                  &kp F5                                          &kp F6        &kp F7        &kp F8            &kp F9         &kp F10  &kp F11
-&none   &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LG(LC(LA(F4))))  &kp LS(LC(LA(LG(F5))))                          &kp HOME      &kp PG_DN     &kp PG_UP         &kp END        &none    &kp F12
-&none   &kp LG(F1)              &kp LG(F2)              &kp LG(F3)              &kp LG(F4)              &kp LG(F5)                                      &kp LEFT      &kp DOWN      &kp UP            &kp RIGHT      &none    &none
-&trans  &trans                  &trans                  &trans                  &trans                  &trans                  &none    &kp BACKSLASH  &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &kp LS(RIGHT)  &none    &none
-                                                        &trans                  &trans                  &trans                  &none    &none          &kp LS(HOME)  &kp LS(END)   &none
+&none   &kp F1                  &kp F2                  &kp F3                  &kp F4                  &kp F5                                           &kp F6        &kp F7        &kp F8            &kp F9         &kp F10  &kp F11
+&none   &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LG(LC(LA(F4))))  &kp LS(LC(LA(LG(F5))))                           &kp HOME      &kp PG_DN     &kp PG_UP         &kp END        &none    &kp F12
+&none   &kp LG(F1)              &kp LG(F2)              &kp LG(F3)              &kp LG(F4)              &kp LG(F5)                                       &kp LEFT      &kp DOWN      &kp UP            &kp RIGHT      &none    &none
+&trans  &trans                  &trans                  &trans                  &trans                  &trans                  &none     &kp BACKSLASH  &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP_ARROW)  &kp LS(RIGHT)  &none    &none
+                                                        &trans                  &trans                  &trans                  &trans    &trans         &kp LS(HOME)  &kp LS(END)   &none
             >;
         };
 
