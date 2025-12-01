@@ -109,7 +109,7 @@
 
         macro_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &soft_off
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &tog 6
 &none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none     &none   &none  &none  &none  &none  &none  &none
