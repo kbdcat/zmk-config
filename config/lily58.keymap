@@ -109,8 +109,8 @@
 
         macro_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &to 6
-&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &to 0
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &tog 6
+&none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                    &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none     &none   &none  &none  &none  &none  &none  &none
                      &none  &none  &none  &tog 3    &tog 4  &none  &none  &none
