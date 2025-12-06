@@ -17,6 +17,20 @@
             bindings = <&kp LG(ENTER) &kp LA(L)>;
             label = "ACCEPT_NEXT";
         };
+
+        xi: xi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(X) &kp I &kp R &kp A &kp F &kp A &kp Y &kp PRCNT>;
+            label = "XI";
+        };
+
+        edw: edw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(E) &kp A &kp R &kp L &kp Y &kp LS(D) &kp U &kp C &kp K &kp LS(W) &kp A &kp S &kp H>;
+            label = "EDW";
+        };
     };
 
     keymap {
@@ -102,7 +116,7 @@
 
         macro_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none                  &xi    &edw   &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
