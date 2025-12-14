@@ -46,11 +46,11 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE        &kp N1  &kp N2  &kp N3           &kp N4          &kp N5                                             &kp N6     &kp N7         &kp N8        &kp N9   &kp N0    &kp EQUAL
-&lt 2 TAB        &kp Q   &kp W   &kp E            &kp R           &kp T                                              &kp Y      &kp U          &kp I         &kp O    &kp P     &kp MINUS
-&lt 1 ESC        &kp A   &kp S   &kp D            &kp F           &kp G                                              &kp H      &kp J          &kp K         &kp L    &kp SEMI  &kp SQT
-&mt LSHFT ENTER  &kp Z   &kp X   &kp C            &kp V           &kp B           &lt 3 LEFT_BRACKET    &lt 5 RBKT   &kp N      &kp M          &kp COMMA     &kp DOT  &kp FSLH  &mt RSHIFT ENTER
-                                 &mt LCTRL LG(C)  &mt LGUI LG(V)  &mt LALT ENTER  &lt 6 SPACE           &lt 6 SPACE  &kp ENTER  &kp BACKSPACE  &lt 1 DELETE
+&kp GRAVE  &kp N1  &kp N2  &kp N3           &kp N4          &kp N5                                             &kp N6     &kp N7         &kp N8        &kp N9   &kp N0    &kp EQUAL
+&lt 2 TAB  &kp Q   &kp W   &kp E            &kp R           &kp T                                              &kp Y      &kp U          &kp I         &kp O    &kp P     &kp MINUS
+&lt 1 ESC  &kp A   &kp S   &kp D            &kp F           &kp G                                              &kp H      &kp J          &kp K         &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X   &kp C            &kp V           &kp B           &lt 3 LEFT_BRACKET    &lt 5 RBKT   &kp N      &kp M          &kp COMMA     &kp DOT  &kp FSLH  &kp RSHIFT
+                           &mt LCTRL LG(C)  &mt LGUI LG(V)  &mt LALT ENTER  &lt 6 SPACE           &lt 6 SPACE  &kp ENTER  &kp BACKSPACE  &lt 1 DELETE
             >;
         };
 
@@ -128,11 +128,11 @@
 
         win_layer {
             bindings = <
-&kp LS(LA(LC(LG(Q))))  &none                  &none                  &none                  &none                  &none                                                            &kp LC(LA(LG(LEFT)))      &kp LC(LA(LG(DOWN)))      &kp LC(LA(LG(UP)))      &kp LC(LA(LG(RIGHT)))      &none  &kp LS(LA(LC(LG(X))))
-&none                  &none                  &none                  &kp LG(LC(LA(LS(R))))  &none                  &none                                                            &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(DOWN))))  &kp LA(LC(LG(LS(UP))))  &kp LC(LG(LA(LS(RIGHT))))  &none  &none
-&none                  &kp LG(LC(LA(LS(C))))  &kp LG(LC(LA(LS(S))))  &kp LG(LC(LA(LS(I))))  &kp LG(LC(LA(LS(O))))  &kp LG(LC(LA(LS(Z))))                                            &kp LA(LC(LG(H)))         &kp LC(LA(LG(J)))         &kp LG(LC(LA(K)))       &kp LG(LC(LA(L)))          &none  &none
-&none                  &none                  &none                  &none                  &none                  &accept_next             &kp LG(LC(LA(LS(F))))    &none          &kp LS(LA(LC(LG(H))))     &kp LG(LC(LA(LS(J))))     &kp LG(LC(LA(LS(K))))   &kp LG(LC(LA(LS(L))))      &none  &none
-                                                                     &none                  &none                  &kp LS(LA(LC(LG(RET))))  &kp LS(ENTER)            &kp LS(ENTER)  &kp LG(SPACE)             &none                     &none
+&kp EQUAL  &kp N0    &kp N9   &kp N8     &kp N7  &kp N6                                  &kp LC(LA(LG(LEFT)))      &kp LC(LA(LG(DOWN)))      &kp LC(LA(LG(UP)))      &kp LC(LA(LG(RIGHT)))      &none  &kp LS(LA(LC(LG(X))))
+&kp MINUS  &kp P     &kp O    &kp I      &kp U   &kp Y                                   &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(DOWN))))  &kp LA(LC(LG(LS(UP))))  &kp LC(LG(LA(LS(RIGHT))))  &none  &kp LS(LA(LC(LG(Q))))
+&kp APOS   &kp SEMI  &kp L    &kp K      &kp J   &kp H                                   &kp LA(LC(LG(H)))         &kp LC(LA(LG(J)))         &kp LG(LC(LA(K)))       &kp LG(LC(LA(L)))          &none  &none
+&kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N   &kp RBKT         &none          &kp LS(LA(LC(LG(H))))     &kp LG(LC(LA(LS(J))))     &kp LG(LC(LA(LS(K))))   &kp LG(LC(LA(LS(L))))      &none  &none
+                              &trans     &trans  &trans  &kp LS(ENTER)    &kp LS(ENTER)  &kp LG(SPACE)             &none                     &none
             >;
 
             label = "Layout";
