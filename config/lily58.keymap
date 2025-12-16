@@ -64,10 +64,10 @@
 
             display-name = "Lower";
             bindings = <
-&none   &kp F1                  &kp F2                  &kp F3                  &kp F4                  &kp F5                                                      &kp F6        &kp F7        &kp F8      &kp F9         &kp F10  &kp F11
-&none   &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LG(LC(LA(F4))))  &kp LS(LC(LA(LG(F5))))                                      &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP)  &kp LS(RIGHT)  &none    &kp F12
-&none   &kp LG(F1)              &kp LG(F2)              &kp LG(F3)              &kp LG(F4)              &kp LG(F5)                                                  &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &none    &none
-&trans  &trans                  &trans                  &trans                  &trans                  &trans                  &kp BACKSLASH    &kp LS(BACKSLASH)  &kp HOME      &kp PG_DN     &kp PG_UP   &kp END        &none    &none
+&none   &kp F1                  &kp F2                  &kp F3                  &kp F4                  &kp F5                                                      &kp F6        &kp F7        &kp F8      &kp F9         &kp F10    &kp F11
+&none   &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LG(LC(LA(F4))))  &kp LS(LC(LA(LG(F5))))                                      &kp LA(LEFT)  &kp LA(DOWN)  &kp LA(UP)  &kp LA(RIGHT)  &none      &kp F12
+&none   &kp LG(F1)              &kp LG(F2)              &kp LG(F3)              &kp LG(F4)              &kp LG(F5)                                                  &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &kp HOME   &kp END
+&trans  &kp LC(LA(F1))          &kp LC(LA(F2))          &kp LC(LA(F3))          &kp LC(LA(F4))          &kp LC(LA(F5))          &kp BACKSLASH    &kp LS(BACKSLASH)  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT)  &kp PG_UP  &kp PG_DN
                                                         &trans                  &trans                  &trans                  &trans           &trans             &kp LS(HOME)  &kp LS(END)   &none
             >;
         };
@@ -128,14 +128,24 @@
 
         win_layer {
             bindings = <
-&kp EQUAL  &kp N0    &kp N9   &kp N8     &kp N7  &kp N6                                  &kp LC(LA(LG(LEFT)))      &kp LC(LA(LG(DOWN)))      &kp LC(LA(LG(UP)))      &kp LC(LA(LG(RIGHT)))      &none  &kp LS(LA(LC(LG(X))))
-&kp MINUS  &kp P     &kp O    &kp I      &kp U   &kp Y                                   &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(DOWN))))  &kp LA(LC(LG(LS(UP))))  &kp LC(LG(LA(LS(RIGHT))))  &none  &kp LS(LA(LC(LG(Q))))
+&kp EQUAL  &kp N0    &kp N9   &kp N8     &kp N7  &kp N6                                  &kp LC(LA(LG(LEFT)))      &kp LC(LA(LG(DOWN)))      &kp LC(LA(LG(UP)))      &kp LC(LA(LG(RIGHT)))      &none  &kp LA(LC(LG(EQUAL)))
+&kp MINUS  &kp P     &kp O    &kp I      &kp U   &kp Y                                   &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(DOWN))))  &kp LA(LC(LG(LS(UP))))  &kp LC(LG(LA(LS(RIGHT))))  &none  &kp LS(LA(LC(LG(X))))
 &kp APOS   &kp SEMI  &kp L    &kp K      &kp J   &kp H                                   &kp LA(LC(LG(H)))         &kp LC(LA(LG(J)))         &kp LG(LC(LA(K)))       &kp LG(LC(LA(L)))          &none  &none
 &kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N   &kp RBKT         &none          &kp LS(LA(LC(LG(H))))     &kp LG(LC(LA(LS(J))))     &kp LG(LC(LA(LS(K))))   &kp LG(LC(LA(LS(L))))      &none  &none
                               &trans     &trans  &trans  &kp LS(ENTER)    &kp LS(ENTER)  &kp LG(SPACE)             &none                     &none
             >;
 
             label = "Layout";
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
