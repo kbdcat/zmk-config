@@ -132,7 +132,7 @@
 &none                  &none  &none                  &none                  &kp LG(LC(LA(LS(U))))  &none                                                              &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(DOWN))))  &kp LA(LC(LG(LS(UP))))  &kp LC(LG(LA(LS(RIGHT))))  &none  &kp LS(LA(LC(LG(X))))
 &none                  &none  &kp LS(LC(LA(LG(C))))  &kp LG(LC(LA(LS(I))))  &kp LG(LC(LA(LS(O))))  &kp LS(LG(LC(LA(Z))))                                              &kp LA(LC(LG(H)))         &kp LC(LA(LG(J)))         &kp LG(LC(LA(K)))       &kp LG(LC(LA(L)))          &none  &none
 &kp RSHFT              &none  &none                  &none                  &none                  &none                  &kp LG(LC(LS(LA(F))))        &none          &kp LS(LA(LC(LG(H))))     &kp LG(LC(LA(LS(J))))     &kp LG(LC(LA(LS(K))))   &kp LG(LC(LA(LS(L))))      &none  &none
-                                                     &trans                 &trans                 &kp LS(ENTER)          &kp LG(LC(LA(LS(ENTER))))    &kp LG(ENTER)  &kp LS(SPACE)             &none                     &none
+                                                     &trans                 &trans                 &kp LS(ENTER)          &kp LG(LC(LA(LS(ENTER))))    &kp LG(SPACE)  &kp LS(ENTER)             &none                     &none
             >;
 
             label = "Layout";
