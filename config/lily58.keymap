@@ -65,7 +65,7 @@
             display-name = "Lower";
             bindings = <
 &none   &kp F1                  &kp F2                  &kp F3                  &kp F4                  &kp F5                                                      &kp F6         &kp F7        &kp F8       &kp F9         &kp F10    &kp F11
-&none   &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LG(LC(LA(F4))))  &kp LS(LC(LA(LG(F5))))                                      &kp LA(LEFT)   &kp LA(DOWN)  &kp LA(UP)   &kp LA(RIGHT)  &none      &kp F12
+&none   &kp LS(LA(LC(LG(F1))))  &kp LS(LA(LC(LG(F2))))  &kp LS(LA(LC(LG(F3))))  &kp LS(LG(LC(LA(F4))))  &kp LS(LC(LA(LG(F5))))                                      &kp LS(LEFT)   &kp LS(DOWN)  &kp LS(UP)   &kp LS(RIGHT)  &none      &kp F12
 &none   &kp LG(F1)              &kp LG(F2)              &kp LG(F3)              &kp LG(F4)              &kp LG(F5)                                                  &kp LEFT       &kp DOWN      &kp UP       &kp RIGHT      &kp HOME   &kp END
 &trans  &kp LC(LA(F1))          &kp LC(LA(F2))          &kp LC(LA(F3))          &kp LC(LA(F4))          &kp LC(LA(F5))          &kp BACKSLASH    &kp LS(BACKSLASH)  &kp LG(LEFT)   &kp LG(DOWN)  &kp LG(UP)   &kp LG(RIGHT)  &kp PG_UP  &kp PG_DN
                                                         &trans                  &trans                  &trans                  &trans           &trans             &kp LS(ENTER)  &kp LS(HOME)  &kp LS(END)
@@ -82,10 +82,10 @@
 
             display-name = "Mouse";
             bindings = <
-&none  &kp LA(LC(F1))  &kp LA(LC(F2))  &kp LA(LC(F3))  &kp LA(LC(F4))  &kp LA(LC(F5))                                      &none           &none           &none         &none            &none  &tog 6
+&none  &kp LA(LC(F1))  &kp LA(LC(F2))  &kp LA(LC(F3))  &kp LA(LC(F4))  &kp LA(LC(F5))                                      &none           &none           &none         &none            &none  &none
 &none  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                        &none           &mkp LCLK       &mkp MCLK     &mkp RCLK        &none  &none
 &none  &none           &none           &none           &none           &none                                               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
-&none  &none           &none           &none           &none           &none           &kp BACKSLASH    &kp LS(BACKSLASH)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &tog 4
+&none  &none           &none           &none           &none           &none           &kp BACKSLASH    &kp LS(BACKSLASH)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
                                        &studio_unlock  &none           &none           &bt BT_CLR       &none              &mkp MB4        &mkp MB5        &none
             >;
         };
@@ -128,11 +128,11 @@
 
         win_layer {
             bindings = <
-&kp EQUAL  &kp N0    &kp N9   &kp N8     &kp N7  &kp N6                                                     &kp LC(LA(LG(LEFT)))      &kp LC(LA(LG(DOWN)))      &kp LC(LA(LG(UP)))      &kp LC(LA(LG(RIGHT)))      &none  &kp LA(LC(LG(EQUAL)))
-&kp MINUS  &kp P     &kp O    &kp I      &kp U   &kp Y                                                      &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(DOWN))))  &kp LA(LC(LG(LS(UP))))  &kp LC(LG(LA(LS(RIGHT))))  &none  &kp LS(LA(LC(LG(X))))
-&kp APOS   &kp SEMI  &kp L    &kp K      &kp J   &kp H                                                      &kp LA(LC(LG(H)))         &kp LC(LA(LG(J)))         &kp LG(LC(LA(K)))       &kp LG(LC(LA(L)))          &none  &none
-&kp RSHFT  &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp N                      &kp RBKT         &none          &kp LS(LA(LC(LG(H))))     &kp LG(LC(LA(LS(J))))     &kp LG(LC(LA(LS(K))))   &kp LG(LC(LA(LS(L))))      &none  &none
-                              &trans     &trans  &kp LG(LC(LA(LS(ENTER))))  &kp LS(ENTER)    &kp LS(ENTER)  &kp LG(SPACE)             &none                     &none
+&kp LS(LA(LC(LG(Q))))  &none  &none                  &none                  &none                  &none                                                              &kp LC(LA(LG(LEFT)))      &kp LC(LA(LG(DOWN)))      &kp LC(LA(LG(UP)))      &kp LC(LA(LG(RIGHT)))      &none  &kp LA(LC(LG(EQUAL)))
+&none                  &none  &none                  &none                  &kp LG(LC(LA(LS(U))))  &none                                                              &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(DOWN))))  &kp LA(LC(LG(LS(UP))))  &kp LC(LG(LA(LS(RIGHT))))  &none  &kp LS(LA(LC(LG(X))))
+&none                  &none  &kp LS(LC(LA(LG(C))))  &kp LG(LC(LA(LS(I))))  &kp LG(LC(LA(LS(O))))  &kp LS(LG(LC(LA(Z))))                                              &kp LA(LC(LG(H)))         &kp LC(LA(LG(J)))         &kp LG(LC(LA(K)))       &kp LG(LC(LA(L)))          &none  &none
+&kp RSHFT              &none  &none                  &none                  &none                  &none                      &kp LG(LC(LS(LA(F))))    &none          &kp LS(LA(LC(LG(H))))     &kp LG(LC(LA(LS(J))))     &kp LG(LC(LA(LS(K))))   &kp LG(LC(LA(LS(L))))      &none  &none
+                                                     &trans                 &trans                 &kp LG(LC(LA(LS(ENTER))))  &kp LS(ENTER)            &kp LS(ENTER)  &kp LG(SPACE)             &none                     &none
             >;
 
             label = "Layout";
