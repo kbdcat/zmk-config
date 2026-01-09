@@ -104,9 +104,9 @@
 
         game_layer {
             bindings = <
+&kp ESC    &trans  &trans  &trans     &trans  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB    &trans  &trans  &trans     &trans  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
-&kt W      &trans  &trans  &trans     &trans  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
-&lt 5 ESC  &trans  &trans  &trans     &trans  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
+&mo 5      &trans  &trans  &trans     &trans  &trans                            &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &trans  &trans  &trans     &trans  &trans    &kp N        &none      &trans  &trans  &trans  &trans  &trans  &kp ESC
                            &kp LCTRL  &mo 3   &kp LALT  &kp SPACE    &kp SPACE  &trans  &trans  &trans
             >;
@@ -136,16 +136,6 @@
             >;
 
             label = "Layout";
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
         };
     };
 };
