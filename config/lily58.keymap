@@ -99,7 +99,7 @@
                         &trans  &trans  &trans  &trans    &kp KP_N0   &trans   &trans           &trans
             >;
 
-            label = "Game/Num";
+            label = "Num";
         };
 
         game_layer {
