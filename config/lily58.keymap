@@ -128,11 +128,11 @@
 
         win_layer {
             bindings = <
-&kp LS(LA(LC(LG(Q))))  &none  &none                  &none                  &none                  &none                                                                  &kp LC(LA(LG(LEFT)))      &kp LC(LA(LG(DOWN)))      &kp LC(LA(LG(UP)))      &kp LC(LA(LG(RIGHT)))      &none  &kp LA(LC(LG(EQUAL)))
-&none                  &none  &none                  &none                  &kp LG(LC(LA(LS(U))))  &none                                                                  &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(DOWN))))  &kp LA(LC(LG(LS(UP))))  &kp LC(LG(LA(LS(RIGHT))))  &none  &kp LS(LA(LC(LG(X))))
-&none                  &none  &kp LS(LC(LA(LG(C))))  &kp LG(LC(LA(LS(I))))  &kp LG(LC(LA(LS(O))))  &kp LS(LG(LC(LA(Z))))                                                  &kp LA(LC(LG(H)))         &kp LC(LA(LG(J)))         &kp LG(LC(LA(K)))       &kp LG(LC(LA(L)))          &none  &none
-&kp RSHFT              &none  &none                  &none                  &none                  &none                  &kp LG(LC(LS(LA(F))))        &kp LA(LC(LG(F)))  &kp LS(LA(LC(LG(H))))     &kp LG(LC(LA(LS(J))))     &kp LG(LC(LA(LS(K))))   &kp LG(LC(LA(LS(L))))      &none  &none
-                                                     &trans                 &trans                 &kp LS(SPACE)          &kp LG(LC(LA(LS(ENTER))))    &kp LS(ENTER)      &kp LG(SPACE)             &none                     &none
+&none      &kp LS(LA(LC(LG(N1))))  &kp LS(LA(LC(LG(N2))))  &kp LG(LC(LA(LS(N3))))  &kp LG(LC(LA(LS(N4))))  &kp LG(LC(LA(LS(N5))))                                                  &kp LC(LA(LG(LEFT)))      &kp LC(LA(LG(DOWN)))      &kp LC(LA(LG(UP)))      &kp LC(LA(LG(RIGHT)))      &none  &kp LA(LC(LG(EQUAL)))
+&none      &kp LG(LC(LA(LS(Q))))   &kp LG(LC(LA(LS(W))))   &kp LG(LC(LA(LS(E))))   &kp LG(LA(LC(LS(R))))   &kp LG(LC(LA(LS(T))))                                                   &kp LA(LC(LG(LS(LEFT))))  &kp LA(LC(LG(LS(DOWN))))  &kp LA(LC(LG(LS(UP))))  &kp LC(LG(LA(LS(RIGHT))))  &none  &kp LS(LA(LC(LG(X))))
+&none      &kp LG(LC(LA(LS(A))))   &kp LG(LC(LA(LS(S))))   &kp LG(LC(LA(LS(D))))   &kp LG(LC(LA(LS(F))))   &kp LS(LA(LC(LG(G))))                                                   &kp LA(LC(LG(H)))         &kp LC(LA(LG(J)))         &kp LG(LC(LA(K)))       &kp LG(LC(LA(L)))          &none  &none
+&kp RSHFT  &kp LG(LC(LA(LS(Z))))   &kp LG(LC(LA(LS(X))))   &kp LG(LC(LA(LS(C))))   &kp LG(LC(LS(LA(V))))   &kp LG(LC(LA(LS(B))))   &kp LG(LC(LA(LS(N))))        &kp LA(LC(LG(F)))  &kp LS(LA(LC(LG(H))))     &kp LG(LC(LA(LS(J))))     &kp LG(LC(LA(LS(K))))   &kp LG(LC(LA(LS(L))))      &none  &none
+                                                           &trans                  &trans                  &kp LS(SPACE)           &kp LG(LC(LA(LS(ENTER))))    &kp LS(ENTER)      &kp LG(SPACE)             &none                     &none
             >;
 
             label = "Layout";
