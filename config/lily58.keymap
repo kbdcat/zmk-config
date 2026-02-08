@@ -11,13 +11,6 @@
 
 / {
     macros {
-        accept_next: accept_next {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(ENTER) &kp LA(L)>;
-            label = "ACCEPT_NEXT";
-        };
-
         xi: xi {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -30,6 +23,13 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(E) &kp A &kp R &kp L &kp Y &kp LS(D) &kp U &kp C &kp K &kp LS(W) &kp A &kp S &kp H>;
             label = "EDW";
+        };
+
+        mac_to_linux: mac_to_linux {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
+            label = "MAC_TO_LINUX";
         };
     };
 
@@ -96,7 +96,7 @@
             bindings = <
 &none  &kp LA(LC(F1))  &kp LA(LC(F2))  &kp LA(LC(F3))  &kp LA(LC(F4))  &kp LA(LC(F5))                                      &none           &none           &none         &none            &none  &none
 &none  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                                        &none           &mkp LCLK       &mkp MCLK     &mkp RCLK        &none  &none
-&none  &none           &none           &none           &none           &none                                               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
+&none  &mac_to_linux   &none           &none           &none           &none                                               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &none  &none
 &none  &none           &none           &none           &none           &none           &kp BACKSLASH    &kp LS(BACKSLASH)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &none  &none
                                        &studio_unlock  &none           &none           &bt BT_CLR       &none              &mkp MB4        &mkp MB5        &none
             >;
@@ -136,6 +136,16 @@
             >;
 
             label = "Macro";
+        };
+
+        Linux {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
