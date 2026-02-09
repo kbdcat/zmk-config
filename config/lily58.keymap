@@ -31,6 +31,13 @@
             bindings = <&bt BT_SEL 0 &to 0>;
             label = "MAC_TO_LINUX";
         };
+
+        mac_win: mac_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp LS(W) &kp LS(T) &kp LS(Q) &kp LS(C) &kp MINUS &kp LS(W) &kp LS(N) &kp N4 &kp LS(R) &kp LS(R) &kp MINUS &kp LS(F) &kp LS(R) &kp LS(F) &kp LS(P) &kp N9 &kp MINUS &kp LS(Q) &kp LS(J) &kp N9 &kp LS(R) &kp N9 &kp MINUS &kp LS(M) &kp LS(G) &kp N9 &kp LS(R) &kp LS(M)>;
+            label = "MAC_WIN";
+        };
     };
 
     keymap {
@@ -104,11 +111,11 @@
 
         game_num_layer {
             bindings = <
-&none   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                        &none    &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &tog 5
-&trans  &none   &kt W   &none   &none   &none                         &none    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
-&trans  &none   &kp C   &kp I   &kp M   &kp J                         &none    &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_ENTER  &none
-&trans  &none   &none   &none   &none   &none   &none     &kp KP_NUM  &kp DOT  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &none
-                        &trans  &trans  &trans  &trans    &kp KP_N0   &trans   &trans           &trans
+&none   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                          &none    &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &tog 5
+&trans  &none   &kt W   &none   &none   &none                           &none    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
+&trans  &none   &kp C   &kp I   &kp M   &kp J                           &none    &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_ENTER  &none
+&trans  &none   &none   &none   &none   &none   &none       &kp KP_NUM  &kp DOT  &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &none
+                        &trans  &trans  &trans  &mac_win    &kp KP_N0   &trans   &trans           &trans
             >;
 
             label = "Num";
