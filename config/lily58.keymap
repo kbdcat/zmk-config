@@ -43,9 +43,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp O>,
+                <&macro_press>,
+                <&kp O>,
                 <&macro_wait_time 10>,
-                <&macro_release &kp O>;
+                <&macro_release>,
+                <&kp O>;
 
             label = "M_REPEAT_O";
         };
@@ -149,7 +151,7 @@
 &none  &none  &none  &none  &none  &none                  &xi    &edw   &none        &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none  &none
 &none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none        &none  &none  &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none        &none  &kp E  &m_repeat_o
                      &none  &none  &none  &none    &none  &none  &none  &key_repeat
             >;
 
