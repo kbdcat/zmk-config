@@ -42,8 +42,8 @@
         m_fast_o: m_fast_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = 10
-            tap-ms = 10
+            wait-ms = 10;
+            tap-ms = 10;
             bindings = <&kp O>;
 
             label = "M_FAST_O";
