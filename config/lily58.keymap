@@ -42,7 +42,12 @@
         m_repeat_o: m_repeat_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &kp O>, <&macro_wait_time 10>, <&macro_release &kp O>;
+            bindings =
+                <&macro_press>,
+                <&kp O>,
+                <&macro_wait_time 10>,
+                <&macro_release>,
+                <&kp O>;
 
             label = "M_REPEAT_O";
         };
@@ -131,10 +136,10 @@
 
         game_layer {
             bindings = <
-&kp ESC    &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &tog 5
-&kp TAB    &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&mo 6      &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans     &kp DOWN     &none   &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans       &tog 5
+&kp TAB    &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans       &trans
+&mo 6      &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans       &trans
+&kp LSHFT  &trans  &trans  &trans    &trans  &trans     &kp DOWN     &none   &trans  &trans  &trans  &trans  &m_repeat_o  &kp E
                            &kp LEFT  &kp UP  &kp RIGHT  &kp SPACE    &trans  &trans  &trans  &trans
             >;
 
