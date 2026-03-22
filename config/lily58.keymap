@@ -42,7 +42,7 @@
         m_repeat_o: m_repeat_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&macro_wait_time 10>, <&macro_release>;
+            bindings = <&macro_press &kp O>, <&macro_wait_time 10>, <&macro_release &kp O>;
 
             label = "M_REPEAT_O";
         };
