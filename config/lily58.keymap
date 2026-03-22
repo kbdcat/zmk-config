@@ -45,7 +45,6 @@
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&kp O>;
-
             label = "M_FAST_O";
         };
     };
@@ -133,10 +132,10 @@
 
         game_layer {
             bindings = <
-&kp ESC    &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans       &tog 5
-&kp TAB    &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans       &trans
-&mo 6      &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans       &trans
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans     &kp DOWN     &none   &trans  &trans  &trans  &trans  &m_fast_o  &kp E
+&kp ESC    &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &tog 5
+&kp TAB    &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&mo 6      &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &trans  &trans  &trans    &trans  &trans     &kp DOWN     &none   &trans  &trans  &trans  &trans  &sk O   &kp E
                            &kp LEFT  &kp UP  &kp RIGHT  &kp SPACE    &trans  &trans  &trans  &trans
             >;
 
@@ -145,9 +144,9 @@
 
         macro_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none                  &xi    &edw   &none        &none  &none        &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none        &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none        &none
+&none  &none  &none  &none  &none  &none                  &xi    &edw   &none        &none  &none      &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none      &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none      &none
 &none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none        &none  &m_fast_o  &kp E
                      &none  &none  &none  &none    &none  &none  &none  &key_repeat
             >;
