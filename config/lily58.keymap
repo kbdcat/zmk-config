@@ -148,10 +148,10 @@
 
         macro_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none                  &xi    &edw   &none        &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none  &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none  &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none        &none  &kp E  &m_repeat_o
+&none  &none  &none  &none  &none  &none                  &xi    &edw   &none        &none  &none        &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none        &none
+&none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none        &none
+&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none        &none  &m_repeat_o  &kp E
                      &none  &none  &none  &none    &none  &none  &none  &key_repeat
             >;
 
