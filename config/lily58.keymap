@@ -43,11 +43,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&kp O>,
+                <&macro_press &kp O>,
                 <&macro_wait_time 10>,
-                <&macro_release>,
-                <&kp O>;
+                <&macro_release &kp O>;
 
             label = "M_REPEAT_O";
         };
