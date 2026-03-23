@@ -25,27 +25,28 @@
             label = "EDW";
         };
 
-        mac_to_linux: mac_to_linux {
+        m_f2_e: m_f2_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0 &to 0>;
-            label = "MAC_TO_LINUX";
+            bindings =
+                <&macro_press>,
+                <&kp F2 &kp E>,
+                <&macro_release>,
+                <&kp F2>;
+
+            label = "M_F2_E";
         };
 
-        mac_win: mac_win {
+        m_f2_q: m_f2_q {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp LS(W) &kp LS(T) &kp LS(Q) &kp LS(C) &kp MINUS &kp LS(W) &kp LS(N) &kp N4 &kp LS(R) &kp LS(R) &kp MINUS &kp LS(F) &kp LS(R) &kp LS(F) &kp LS(P) &kp N9 &kp MINUS &kp LS(Q) &kp LS(J) &kp N9 &kp LS(R) &kp N9 &kp MINUS &kp LS(M) &kp LS(G) &kp N9 &kp LS(R) &kp LS(M)>;
-            label = "MAC_WIN";
-        };
+            bindings =
+                <&macro_press>,
+                <&kp F2 &kp QMARK>,
+                <&macro_release>,
+                <&kp F2>;
 
-        m_fast_o: m_fast_o {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&kp O>;
-            label = "M_FAST_O";
+            label = "M_F2_Q";
         };
     };
 
@@ -132,11 +133,11 @@
 
         game_layer {
             bindings = <
-&kp ESC    &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &tog 5
-&kp TAB    &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&mo 6      &trans  &trans  &trans    &trans  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &trans  &trans  &trans    &trans  &trans     &kp DOWN     &none   &trans  &trans  &trans  &trans  &sk O   &kp E
-                           &kp LEFT  &kp UP  &kp RIGHT  &kp SPACE    &trans  &trans  &trans  &trans
+&kp ESC    &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans  &trans  &trans  &tog 5
+&kp TAB    &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&mo 6      &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &trans  &trans  &trans    &trans      &trans     &kp H        &none   &trans  &trans  &trans  &trans  &kp R   &kp R
+                           &kp LALT  &kp LSHIFT  &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans
             >;
 
             label = "Game";
@@ -144,11 +145,11 @@
 
         macro_layer {
             bindings = <
-&none  &none  &none  &none  &none  &none                  &xi    &edw   &none        &none  &none      &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none      &none
-&none  &none  &none  &none  &none  &none                  &none  &none  &none        &none  &none      &none
-&none  &none  &none  &none  &none  &none  &none    &none  &none  &none  &none        &none  &m_fast_o  &kp E
-                     &none  &none  &none  &none    &none  &none  &none  &key_repeat
+&none  &kp F1   &kp F2  &kp F3   &kp F4  &kp F5                  &xi    &edw   &none        &none  &none  &none
+&none  &m_f2_q  &none   &m_f2_e  &none   &none                   &none  &none  &none        &none  &none  &none
+&none  &none    &none   &none    &none   &none                   &none  &none  &none        &none  &none  &none
+&none  &none    &none   &none    &none   &none   &none    &none  &none  &none  &none        &none  &none  &none
+                        &none    &none   &none   &none    &none  &none  &none  &key_repeat
             >;
 
             label = "Macro";
