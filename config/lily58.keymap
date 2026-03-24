@@ -145,11 +145,11 @@
 
         macro_layer {
             bindings = <
-&none  &kp F1   &kp F2  &kp F3   &kp F4  &kp F5                  &xi    &edw   &none        &none  &none  &none
-&none  &m_f2_q  &none   &m_f2_e  &none   &none                   &none  &none  &none        &none  &none  &none
-&none  &kp F1   &kp F2  &kp F3   &kp F4  &kp F5                  &none  &none  &none        &none  &none  &none
-&none  &none    &none   &none    &none   &none   &none    &none  &none  &none  &none        &none  &none  &none
-                        &none    &none   &none   &none    &none  &none  &none  &key_repeat
+&none  &kp F1   &kp F2  &kp F3   &kp F4  &kp F5                      &xi    &edw   &none        &none  &none  &none
+&none  &m_f2_q  &none   &m_f2_e  &none   &none                       &none  &none  &none        &none  &none  &none
+&none  &kp F1   &kp F2  &kp F3   &kp F4  &kp F5                      &none  &none  &none        &none  &none  &none
+&none  &none    &none   &none    &none   &none   &none        &none  &none  &none  &none        &none  &none  &none
+                        &none    &none   &none   &kp SPACE    &none  &none  &none  &key_repeat
             >;
 
             label = "Macro";
