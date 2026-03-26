@@ -48,6 +48,21 @@
 
             label = "M_F2_Q";
         };
+
+        m_vault_lariat: m_vault_lariat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp SPACE &mkp LCLK>,
+                <&macro_release>,
+                <&macro_wait_time 500>,
+                <&macro_press>,
+                <&kp F &mkp RCLK>,
+                <&macro_release>;
+
+            label = "M_VAULT_LARIAT";
+        };
     };
 
     keymap {
@@ -145,11 +160,11 @@
 
         macro_layer {
             bindings = <
-&none  &kp F1   &kp F2  &kp F3   &kp F4  &kp F5                      &xi    &edw   &none        &none  &none  &none
-&none  &m_f2_q  &none   &m_f2_e  &none   &none                       &none  &none  &none        &none  &none  &none
-&none  &kp F1   &kp F2  &kp F3   &kp F4  &kp F5                      &none  &none  &none        &none  &none  &none
-&none  &none    &none   &none    &none   &none   &none        &none  &none  &none  &none        &none  &none  &none
-                        &none    &none   &none   &kp SPACE    &none  &none  &none  &key_repeat
+&none  &kp F1   &kp F2           &kp F3   &kp F4  &kp F5                      &xi    &edw   &none        &none  &none  &none
+&none  &m_f2_q  &m_vault_lariat  &m_f2_e  &none   &none                       &none  &none  &none        &none  &none  &none
+&none  &kp F1   &kp F2           &kp F3   &kp F4  &kp F5                      &none  &none  &none        &none  &none  &none
+&none  &none    &none            &none    &none   &none   &none        &none  &none  &none  &none        &none  &none  &none
+                                 &none    &none   &none   &kp SPACE    &none  &none  &none  &key_repeat
             >;
 
             label = "Macro";
