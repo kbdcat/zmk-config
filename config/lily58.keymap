@@ -173,7 +173,7 @@
         Alt {
             label = "Alt";
             bindings = <
-&kp ESC    &trans     &trans     &trans     &trans      &trans                             &trans  &trans  &trans  &trans  &trans  &tog 5
+&kp ESC    &trans     &trans     &trans     &trans      &trans                             &tog 7  &trans  &trans  &trans  &trans  &tog 5
 &kp TAB    &trans     &kp LS(W)  &trans     &trans      &trans                             &trans  &trans  &trans  &trans  &trans  &trans
 &mo 6      &kp LS(A)  &kp LS(S)  &kp LS(D)  &trans      &trans                             &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &trans     &trans     &trans     &trans      &trans     &kp F3       &kt LCTRL  &trans  &trans  &trans  &trans  &trans  &trans
