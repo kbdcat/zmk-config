@@ -92,7 +92,7 @@
 &none      &kp LG(LC(LA(LS(Q))))   &kp LG(LC(LA(LS(W))))   &kp LG(LC(LA(LS(E))))   &kp LG(LA(LC(LS(R))))   &kp LG(LC(LA(LS(T))))                                                   &kp LA(LC(LG(LEFT)))      &kp LA(LC(LG(DOWN)))      &kp LA(LC(LG(UP)))      &kp LC(LG(LA(RIGHT)))      &kp LS(LA(LC(LG(P))))          &kp LS(LA(LC(LG(MINUS))))
 &none      &kp LG(LC(LA(LS(A))))   &kp LG(LC(LA(LS(S))))   &kp LG(LC(LA(LS(D))))   &kp LG(LC(LA(LS(F))))   &kp LS(LA(LC(LG(G))))                                                   &kp LA(LC(LG(H)))         &kp LC(LA(LG(J)))         &kp LG(LC(LA(K)))       &kp LG(LC(LA(L)))          &kp LS(LA(LC(LG(SEMICOLON))))  &kp LS(LA(LC(LG(SQT))))
 &kp RSHFT  &kp LG(LC(LA(LS(Z))))   &kp LG(LC(LA(LS(X))))   &kp LG(LC(LA(LS(C))))   &kp LG(LC(LS(LA(V))))   &kp LG(LC(LA(LS(B))))   &kp BACKSLASH                &kp LS(BACKSLASH)  &kp LS(LA(LC(LG(H))))     &kp LG(LC(LA(LS(J))))     &kp LG(LC(LA(LS(K))))   &kp LG(LC(LA(LS(L))))      &kp LS(LA(LC(LG(SLASH))))      &kp LS(LA(LC(LG(PERIOD))))
-                                                           &trans                  &trans                  &kp LS(SPACE)           &kp LG(LC(LA(LS(ENTER))))    &kp LS(ENTER)      &kp LG(SPACE)             &kp BACKSLASH             &kp LS(BACKSLASH)
+                                                           &kp CAPS                &trans                  &kp LS(SPACE)           &kp LG(LC(LA(LS(ENTER))))    &kp LS(ENTER)      &kp LG(SPACE)             &kp BACKSLASH             &kp LS(BACKSLASH)
             >;
 
             label = "Layout";
@@ -136,7 +136,7 @@
 
         game_num_layer {
             bindings = <
-&none   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                       &kp CAPS  &none            &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &tog 5
+&none   &kp N6  &kp N7  &kp N8  &kp N9  &kp N0                       &kp CAPS  &trans           &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &tog 5
 &trans  &none   &kt W   &none   &none   &none                        &none     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &none
 &trans  &none   &kp C   &kp I   &kp M   &kp J                        &none     &kp KP_NUMBER_4  &kp KP_N5        &kp KP_NUMBER_6  &kp KP_ENTER  &none
 &trans  &none   &none   &none   &none   &none   &none    &kp KP_NUM  &kp DOT   &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_ENTER  &none
@@ -148,11 +148,11 @@
 
         game_layer {
             bindings = <
-&kp ESC    &trans  &trans  &trans    &trans      &trans                             &tog 7  &trans  &trans  &trans  &trans  &tog 5
-&kp TAB    &trans  &trans  &trans    &trans      &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&mo 6      &trans  &trans  &trans    &trans      &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &trans  &trans  &trans    &trans      &trans     &kp F3       &kt LCTRL  &trans  &trans  &trans  &trans  &trans  &trans
-                           &kp LALT  &kp LSHIFT  &kp LCTRL  &kp SPACE    &trans     &trans  &trans  &trans
+&kp ESC    &trans  &trans  &trans    &trans      &trans                                  &kp CAPS  &trans  &trans  &trans  &trans  &tog 5
+&kp TAB    &trans  &trans  &trans    &trans      &trans                                  &trans    &trans  &trans  &trans  &trans  &trans
+&mo 6      &trans  &trans  &trans    &trans      &trans                                  &trans    &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &trans  &trans  &trans    &trans      &trans     &kp F3       &kp KP_NUMLOCK  &trans    &trans  &trans  &trans  &trans  &trans
+                           &kp LALT  &kp LSHIFT  &kp LCTRL  &kp SPACE    &trans          &trans    &trans  &trans
             >;
 
             label = "Game";
@@ -168,17 +168,6 @@
             >;
 
             label = "Macro";
-        };
-
-        Alt {
-            label = "Alt";
-            bindings = <
-&kp ESC    &trans     &trans     &trans     &trans      &trans                             &tog 7  &trans  &trans  &trans  &trans  &tog 5
-&kp TAB    &trans     &kp LS(W)  &trans     &trans      &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&mo 6      &kp LS(A)  &kp LS(S)  &kp LS(D)  &trans      &trans                             &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &trans     &trans     &trans     &trans      &trans     &kp F3       &kt LCTRL  &trans  &trans  &trans  &trans  &trans  &trans
-                                 &kp LALT   &kp LSHIFT  &kp LCTRL  &kp SPACE    &trans     &trans  &trans  &trans
-            >;
         };
     };
 };
