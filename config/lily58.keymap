@@ -28,17 +28,17 @@
 &trans  &trans    &trans    &trans  &trans     &trans                             &kp LS(LEFT)  &kp LS(DOWN)  &kp LS(UP)  &kp LS(RIGHT)  &kp PG_UP  &kp F12
 &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans                             &kp LEFT      &kp DOWN      &kp UP      &kp RIGHT      &kp HOME   &kp END
 &trans  &trans    &trans    &trans  &trans     &trans  &kp BACKSLASH    &kp PIPE  &trans        &trans        &trans      &trans         &kp PG_DN  &trans
-                            &trans  &trans     &trans  &trans           &trans    &trans        &trans        &none
+                            &trans  &trans     &trans  &trans           &trans    &trans        &trans        &trans
             >;
         };
 
         raise_layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &trans            &trans            &trans          &trans             &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &kp LC(LG(LEFT))  &kp LC(LG(DOWN))  &kp LC(LG(UP))  &kp LC(LG(RIGHT))  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                          &kp LG(LEFT)      &kp LG(DOWN)      &kp LG(UP)      &kp LG(RIGHT)      &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans            &trans            &trans          &trans             &trans  &trans
-                                        &trans        &trans        &trans        &trans    &trans  &trans            &trans            &none
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &trans            &trans             &trans             &trans             &trans  &trans
+&trans      &kp LG(Q)     &kp LG(W)     &kp LG(E)     &kp LG(R)     &kp LG(T)                           &kp LC(LG(LEFT))  &kp LC(LG(DOWN))   &kp LC(LG(UP))     &kp LC(LG(RIGHT))  &trans  &trans
+&trans      &kp A         &kp S         &kp D         &kp F         &kp G                               &kp LG(LEFT)      &kp LG(DOWN)       &kp LG(UP)         &kp LG(RIGHT)      &trans  &trans
+&trans      &kp Z         &kp X         &kp C         &kp V         &kp B         &kp LBKT    &kp RBKT  &trans            &kp LG(LC(PG_DN))  &kp LG(LC(PG_UP))  &trans             &trans  &trans
+                                        &kp LGUI      &trans        &trans        &trans      &trans    &trans            &trans             &trans
             >;
         };
 
