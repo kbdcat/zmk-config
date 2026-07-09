@@ -38,7 +38,7 @@
 &trans      &kp LG(Q)     &kp LG(W)     &kp LG(E)     &kp LG(R)     &kp LG(T)                                   &kp LC(LG(LEFT))  &kp LC(LG(DOWN))   &kp LC(LG(UP))     &kp LC(LG(RIGHT))  &trans  &trans
 &trans      &kp LG(A)     &kp LG(S)     &kp LG(D)     &kp LG(F)     &kp LG(G)                                   &kp LG(LEFT)      &kp LG(DOWN)       &kp LG(UP)         &kp LG(RIGHT)      &trans  &trans
 &trans      &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(B)     &kp LG(LBKT)    &kp LG(RBKT)  &kp LG(LC(HOME))  &kp LG(LC(PG_DN))  &kp LG(LC(PG_UP))  &kp LG(LC(END))    &trans  &trans
-                                        &trans        &trans        &trans        &kp LS(RET)     &kp LS(RET)   &trans            &trans             &trans
+                                        &trans        &trans        &trans        &kp LS(RET)     &kp LA(RET)   &trans            &trans             &trans
             >;
         };
 
