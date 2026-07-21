@@ -44,11 +44,11 @@
 
         Game {
             bindings = <
-&kp ESC  &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans  &trans  &trans  &trans
-&mo 4    &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans  &trans  &trans  &mo 4
-&trans   &trans  &trans  &trans    &trans      &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp LALT  &kp LSHIFT  &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &trans
+&kp ESC           &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans        &trans  &trans  &trans
+&trans            &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans        &trans  &trans  &trans
+&lt 4 LEFT_SHIFT  &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans        &trans  &trans  &mo 4
+&trans            &trans  &trans  &trans    &trans      &trans     &trans       &trans  &trans  &trans  &trans        &trans  &trans  &trans
+                                  &kp LALT  &kp LSHIFT  &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &kp LEFT_GUI
             >;
         };
 
