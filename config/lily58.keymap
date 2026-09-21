@@ -46,7 +46,7 @@
             bindings = <
 &kp ESC           &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans        &trans  &trans  &trans
 &trans            &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans        &trans  &trans  &trans
-&lt 4 LEFT_SHIFT  &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans        &trans  &trans  &mo 4
+&lt 4 KP_NUMLOCK  &trans  &trans  &trans    &trans      &trans                          &trans  &trans  &trans        &trans  &trans  &mo 4
 &trans            &trans  &trans  &trans    &trans      &trans     &trans       &trans  &trans  &trans  &trans        &trans  &trans  &trans
                                   &kp LALT  &kp LSHIFT  &kp LCTRL  &kp SPACE    &trans  &trans  &trans  &kp LEFT_GUI
             >;
@@ -56,7 +56,7 @@
             bindings = <
 &tog 3  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &tog 3
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&none   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&mo 4   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
             >;
